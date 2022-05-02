@@ -1,4 +1,14 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {background-color:black; color: white;
+    font-family: arial ;}
+h1{color:grey; font-family: verdana;}
+.main{
+    background-color:white;
+    width: 475px;
+    padding: 25px;
+    border-radius: 20px;
+    color: black;
+    margin: auto
+}
+.highlight {
+    background-color: yellow;
+}

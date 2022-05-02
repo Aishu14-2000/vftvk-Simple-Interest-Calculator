@@ -1,16 +1,97 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
+    <title>Simple Interest Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <div class="highlight">
+    <script>
+        document.getElementById("principal").value;
+    </script>
+    </div>
     </head>
+    <div class="main">
     <body>
         <h1>Simple Interest Calculator</h1>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <label for="principal">Amount</label> 
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="number"  id="principal" name="principal">  <br><br>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <label for="rate">Interest Rate</label> 
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="range"  id="rate" name="rate" min=1
+                max=20 value=10.25 onchange="updateRate()">
+        <span id="rate_val">10.50%</span>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
+          <br><br>
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+        <label for="years">No. of years    </label> 
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
+        
+        <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        
+        <br><br>
+       <!-- Rate <input type="number"  id="rate">  <br/>
         No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Interest : <span id="result"></span><br>-->
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
+       <br><br>
+        
+        <span id="result">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+        </span>
     </body>
+    <br>
+    <footer>
+        &#169; This Calculator belongs to mine
+    </footer>
+    </div>
+    
+
 </html>
