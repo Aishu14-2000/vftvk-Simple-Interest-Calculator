@@ -4,8 +4,8 @@ function compute()
    
    var  r=  document.getElementById("rate").value;
    var  y=  document.getElementById("years").value;
-   if(p==""){
-       alert("Please enter amount");
+   if(p=="" || p<="0"){
+       alert("Please enter valid amount");
        p.focus();
        return false;
    }
