@@ -9,19 +9,9 @@ function compute()
        p.focus();
        return false;
    }
-   if(r==""){
-    alert("Please enter rate");
-    r.focus();
-    return false;
-   }
-   if(y==""){
-    alert("Please enter amount");
-    y.focus();
-    return false;
-    }
    var si= (p*y*r)/100;
    var year = new Date().getFullYear()+parseInt(y);
-   document.getElementById("result").innerHTML="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIf you deposit "+p+",\<br\>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspat an interest rate of "+r+"%\<br\>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYou will receive an amount of "+si+",\<br\>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspin the year "+year+"\<br\>"
+   document.getElementById("result").innerHTML="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIf you deposit <mark>"+p+"</mark>,\<br\>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspat an interest rate of <mark>"+r+"%</mark>\<br\>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYou will receive an amount of <mark>"+si+"</mark>,\<br\>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspin the year <mark>"+year+"</mark>\<br\>"
 }
 function updateRate() 
 {
